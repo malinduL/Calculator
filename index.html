@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="background">
+    <h1 class="calculator">Calculator</h1>
+    <input id="result" type="text" disabled size="40"><br>
+    <br>
+    <button type="button" class="btn btn-primary large-button " onclick="clearDisplay()">Clear</button><br>
+    <br>
+    <button type="button" class="btn btn-info large-button " onclick="updateDisplay('1')"><span class="button-text">1</span></button>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('2')"><span class="button-text">2</span></button>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('3')"><span class="button-text">3</span></button>
+    <button type="button" class="btn btn-danger large-button" onclick="updateDisplay('+')"><span class="button-text">+</span></button><br>
+    <br>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('4')"><span class="button-text">4</span></button>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('5')"><span class="button-text">5</span></button>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('6')"><span class="button-text">6</span></button>
+    <button type="button" class="btn btn-danger large-button" onclick="updateDisplay('-')"><span class="button-text">-</span></button><br>
+    <br>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('7')"><span class="button-text">7</span></button>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('8')"><span class="button-text">8</span></button>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('9')"><span class="button-text">9</span></button>
+    <button type="button" class="btn btn-danger large-button" onclick="updateDisplay('*')"><span class="button-text">*</span></button><br>
+    <br>
+    <button type="button" class="btn btn-info large-button" onclick="updateDisplay('0')"><span class="button-text">0</span></button>
+    <button type="button" class="btn btn-danger large-button" onclick="updateDisplay('.')"><span class="button-text">.</span></button>
+    <button type="button" class="btn btn-danger large-button" onclick="calculate()"><span class="button-text">=</span></button>
+    <button type="button" class="btn btn-danger large-button" onclick="updateDisplay('/')"><span class="button-text">/</span></button><br>
+    </div>  
+
+    
+</body>
+</html>
